@@ -354,34 +354,38 @@ header{
 	width:100%;
 	height:100px;
 	display:flex;
-  background-color:#000000;
+  position:fixed;
 }
 /* Header END */
 
 /* Nav */
 nav{
-	text-align:center;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 	width:100%;
 	height:100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 nav a{
   display: flex;
   justify-content: center;
   align-items: center;
-	width:15%;
-	height:100%;
+	width:10%;
+	height:45%;
+  margin: 0 15px 0 15px;
 	font-size:20px;
-	color:#ffffff;
+	color:#112434;
 	text-decoration:none;
 }
 
-nav a:hover{
-	background-color:#e60000;
+nav a:hover,
+nav a.active{
+	background-color:#112434;
+  color:#ffffff;
+  border-radius: 12px; 
 }
+
 /* Nav END */
 
 /* Footer */
@@ -408,9 +412,9 @@ footer p{
 
 .footerLeft, .footerRight{
 	width:50%;
+  height:50px;
 	display:flex;
 	align-content: center;
-	line-height: 50px;
 }
 .footerLeft{
 	text-align: left;
@@ -435,14 +439,20 @@ footer a p{
 /* Footer End */  
 
 /* Index */
+
 /* Feature Image */
-.feature-image{
+.featured-item{
 	width:100%;
-	height:700px;
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-position:center;
-	margin-bottom:30px;
+	height:100vh;
+}
+
+.featured-gif{
+  width:100%;
+  height:100%;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-image:url(image/preview.gif);
+  background-size: cover;
 }
 
 /* Product section */
@@ -456,7 +466,7 @@ footer a p{
 .text-section{
 	width:50%;
 	display:inline-block;
-    padding:30px;
+  padding:30px;
 }
 
 .text-section h1{
@@ -465,7 +475,8 @@ footer a p{
 }
 
 .text-section p{
-	padding: 20px;
+  font-size:25px;
+	padding: 10% 15% 0 15%;
 }
 
 /* Image Section */
@@ -503,13 +514,160 @@ footer a p{
 	justify-content:center;
 }
 
+.category{
+	width:25%;
+  background-color:white;
+  padding:10px 20px 10px 20px;
+  text-align:center;
+}
+
+.category h1{
+  font-size:30px;
+}
+
+.category img{
+	width:100%;
+  margin: 10px 0px 20px 0px;
+}
+
+.category input[type=button]{
+  padding:7.5px;
+  background-color: #112434;
+  color:white;
+  border-radius: 15px;
+}
+
+.category input[type=button]:hover{
+  background-color: white;
+  color: #112434;
+}
+
+/* Testimonies */
+.testimonies{
+  width:100%;
+  height: 40vh;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.testimony{
+  display:inline-block;
+  width: 30%;
+  height:100%;
+  text-align:center;
+}
+
+.testimony img{
+  width: 100%;
+}
+
+.seeMore{
+  width:100%;
+  display:flex;
+  justify-content: right;
+  align-items: center;
+  text-align:center;
+}
+
+.seeMore a{
+  display:block;
+  padding:20px;
+  height: 100%;
+  background-color: #112434;
+  color:#ffffff;
+}
+
+/* Index END */
+
+/* Products */
+.whitespace{
+  width:90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.categories{
+  width:290px;
+  margin-right: 15px;
+}
+
+.categories hr{
+  /* Changing the width of this requires changing of width of categories ul li*/
+  width: 262px;
+  margin:10px 10px 10px 0px; 
+}
+
+.categories ul{
+  list-style-type: none;
+  height:40vh;
+  padding:0;
+}
+
+.categories ul li{
+  /* Changing the width of this requires changing of width of categories ul li*/
+  width:262px;
+  height:45.85px;
+  font-size: 20px;
+  margin: 10px 10px 10px 0px;
+  display:flex;
+  align-items: center;
+}
+
+.categories ul li:hover{
+  background-color:#000000;
+  color:#ffffff;
+}
+
+.products-main-content{
+  display:flex;
+  justify-content: middle;
+}
+
+.products-listing{
+  width:90%;
+  height:100vh;
+  display:block;
+  background-color:yellow;
+}
+
+.products-per-line{
+  width:100%;
+  height:33%;
+  display:flex;
+  justify-content: space-evenly;
+}
+
 .product{
-	width:20%;
-	display:inline-block;
-	margin:20px;
+  width:30%;
+  height:100%;
+  text-align:center;
 }
 
 .product img{
-	width:100%;
+  width:100%;
 }
-/* Index END */
+
+.pages{
+  display:flex;
+  justify-content: end;
+}
+
+.page-list{
+  width: 197px;
+  list-style-type: none;
+  display:flex;
+  justify-content: space-between;
+  padding:0px;
+}
+
+.page-list li{
+  display:block;
+  border: 2px #000000 solid;
+  padding:7.5px;
+}
+
+
+.page-list li:hover, .page-list li.active{
+  background-color:#112434;
+  color:white;
+}

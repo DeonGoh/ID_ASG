@@ -6,21 +6,29 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="js\index.js"></script>
   </head>
-  <body>
+  <body onload = "Load()">
     <header>
   			<a href="#" class="logo">
-  		   <img src="logo.png" height="100%" alt="Logo">
+  		   <img src="image/logo.png" height="100%" alt="Logo">
   			</a>
         <nav>
-    			<a href="#" class="testimonies">Testimonies</a>
-    			<a href="#" class="products">Products</a>
-    			<a href="#" class="contact">Contact</a>
-          <a href='#' class="promotion">Promotion</a>
+          <a href="#" class="active">Home</a>
+    			<a href="testimonies.html">Testimonies</a>
+    			<a href="products.html">Products</a>
+    			<a href="contact.html">Contact</a>
+          <a href='promotions.html'>Promotion</a>
+          <a href="cart.html">
+            <p id="cartQuantity"></p>
+            <img src="image/cartFillEmpty.png" height="30px" alt ="cart">
+          </a>
     		</nav>
 		</header>
 
     <!-- Featured Image-->
-    <img class="feature-image" src="background2.png">
+    <div class="featured-item">
+      <div class="featured-gif">
+      </div>
+    </div>
 
     <div class="headline">
       <h1>Featured Product</h1>
@@ -50,52 +58,81 @@
       </div>
     </section>
 
+
     <div class="headline">
-      <h1>Browse Our Catalog</h1>
+      <h1>Browse Our Categories</h1>
     </div>
 
     <section class="category-selection">
-      <div class="product">
+      <div class="category">
+        <h1>Phones</h1>
         <img src="image/phone.png" alt="phone">
-        <h1>Phone</h1>
-        <p>
-          Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <input type="button" value="Shop Now">
       </div>
 
-      <div class="product">
-        <img src="image/phone.png" alt="phone">
+      <div class="category">
         <h1>Phone</h1>
-        <p>
-          Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <img src="image/phone.png" alt="phone">
+        <input type="button" value="Shop Now">
       </div>
 
-      <div class="product">
-        <img src="image/phone.png" alt="phone">
+      <div class="category">
         <h1>Phone</h1>
-        <p>
-          Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <img src="image/phone.png" alt="phone">
+        <input type="button" value="Shop Now">
       </div>
 
-      <div class="product">
-        <img src="image/phone.png" alt="phone">
+      <div class="category">
         <h1>Phone</h1>
-        <p>
-          Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <img src="image/phone.png" alt="phone">
+        <input type="button" value="Shop Now">
       </div>
-
     </section>
+
+    <div class="headline">
+      <h1>Testimonials</h1>
+    </div>
+
+    <section class="testimonies">
+      <div class="testimony">
+        <img src="image/phone.png">
+        <h1>Name</h1>
+        <h2>Job</h2>
+        <p>Description</p>
+      </div>
+
+      <div class="testimony">
+        <img src="image/phone.png">
+        <h1>Name</h1>
+        <h2>Job</h2>
+        <p>Description</p>
+      </div>
+
+      <div class="testimony">
+        <img src="image/phone.png">
+        <h1>Name</h1>
+        <h2>Job</h2>
+        <p>Description</p>
+      </div>
+
+      <div class="testimony">
+        <img src="image/phone.png">
+        <h1>Name</h1>
+        <h2>Job</h2>
+        <p>Description</p>
+      </div>
+
+      <div class="testimony">
+        <img src="image/phone.png">
+        <h1>Name</h1>
+        <h2>Job</h2>
+        <p>Description</p>
+      </div>
+    </section>
+    <div class="seeMore">
+      <a href="testimonials.html">See more testimonials</a>
+    </div>  
+
     <footer>
 			<div class="footerInner">
 				<div class="footerLeft">
@@ -112,7 +149,4 @@
 			</div>
 		</footer>
   </body>
-
-  <footer>
-  </footer>
 </html>
