@@ -348,7 +348,11 @@
     display: none;
   }
 /* NORMALIZE CSS END */
-
+body
+{
+  background-color: black;
+  color:white;
+}
 /* Header */
 header{
 	width:100%;
@@ -467,12 +471,32 @@ footer a p{
 
 }
 
+
+.featured-item-details{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.featured-item-details img{
+  width:100%;
+}
+
+.featured-item-details input[type=button]{
+  margin-top:20px;
+  padding:10px;
+}
+
 /* Product section */
 .product-section{
 		width:100%;
 		display:flex;
 		justify-content: center;
 }
+
 
 /* Text Section */
 .text-section{
