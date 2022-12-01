@@ -349,11 +349,6 @@
   }
 /* NORMALIZE CSS END */
 
-body
-{
-  background-color: black;
-  color:white;
-}
 /* Header */
 header{
 	width:90%;
@@ -488,25 +483,6 @@ footer a p{
 
 }
 
-
-.featured-item-details{
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
-.featured-item-details img{
-  width:100%;
-}
-
-.featured-item-details input[type=button]{
-  margin-top:20px;
-  padding:10px;
-}
-
 /* Product section */
 .product-section{
 		width:100%;
@@ -598,7 +574,6 @@ footer a p{
 /* Testimonies */
 .testimonies{
   width:100%;
-  height: 40vh;
   overflow-x: hidden;
   white-space: nowrap;
 }
@@ -639,93 +614,22 @@ footer a p{
   margin-left: auto;
 }
 
-.categories{
-  width:290px;
-  margin-right: 15px;
-}
-
-.categories hr{
-  /* Changing the width of this requires changing of width of categories ul li*/
-  width: 262px;
-  margin:10px 10px 10px 0px; 
-}
-
-.categories ul{
-  list-style-type: none;
-  height:40vh;
-  padding:0;
-}
-
-.categories ul li{
-  /* Changing the width of this requires changing of width of categories ul li*/
-  width:262px;
-  height:45.85px;
-  font-size: 20px;
-  margin: 10px 10px 10px 0px;
-  display:flex;
-  align-items: center;
-}
-
-.categories ul li:hover{
-  background-color:#000000;
-  color:#ffffff;
-}
-
-.products-main-content{
-  display:flex;
-  justify-content: middle;
-}
-
 .products-listing{
-  width:90%;
-  height:100vh;
-  display:block;
-  background-color:yellow;
+  width:100%;
+  display:flex;
 }
 
-.products-per-line{
-  width:100%;
-  height:33%;
-  display:flex;
-  justify-content: space-evenly;
-}
 
 .product{
-  width:30%;
-  height:100%;
-  text-align:center;
+  width:25%;
 }
 
 .product img{
   width:100%;
 }
 
-.pages{
-  display:flex;
-  justify-content: end;
-}
 
-.page-list{
-  width: 197px;
-  list-style-type: none;
-  display:flex;
-  justify-content: space-between;
-  padding:0px;
-}
-
-.page-list li{
-  display:block;
-  border: 2px #000000 solid;
-  padding:7.5px;
-}
-
-
-.page-list li:hover, .page-list li.active{
-  background-color:#112434;
-  color:white;
-}
-
-/* Contact Us */
+/* Contact Us */   
 .contact-section{
   width:90%;
   height:100vh;
