@@ -348,6 +348,7 @@
     display: none;
   }
 /* NORMALIZE CSS END */
+
 body
 {
   background-color: black;
@@ -355,9 +356,18 @@ body
 }
 /* Header */
 header{
-	width:100%;
-	height:100px;
+	width:90%;
+	height:75px;
 	display:flex;
+  position:absolute;
+  border-bottom:1px solid white;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+header img{
+  height:100%;
 }
 /* Header END */
 
@@ -365,7 +375,7 @@ header{
 nav{
   display: flex;
   justify-content: right;
-  align-items: center;
+  align-items: end;
 	width:100%;
 	height:100%;
   z-index: 2;
@@ -376,18 +386,25 @@ nav a{
   justify-content: center;
   align-items: center;
 	width:10%;
-	height:45%;
+	height:50%;
   margin: 0 15px 0 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 	font-size:20px;
-	color:#112434;
+  color:white;
+  border-bottom: 2px solid transparent;
 	text-decoration:none;
 }
 
-nav a:hover,
-nav a.active{
-	background-color:#112434;
+nav a:hover{
+  border-bottom: 2px white solid;
+  /* Changing depending on color scheme*/
   color:#ffffff;
-  border-radius: 12px; 
+}
+
+nav a.active{
+  /* Changing depending on color scheme*/
+
 }
 
 /* Nav END */
@@ -706,4 +723,42 @@ footer a p{
 .page-list li:hover, .page-list li.active{
   background-color:#112434;
   color:white;
+}
+
+/* Contact Us */
+.contact-section{
+  width:90%;
+  height:100vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+.contact-section form{
+  background-color: green;
+  width:80%;
+  height:80%;
+  margin:0px auto 0px auto;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-per-line{
+  display:flex;
+}
+
+.input-per-line input[type=text]{
+  width:200px;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.contact-section form textarea{
+  margin-left: 20px;
+
+}
+
+.contact-section aside{
+  width: 20%;
 }
