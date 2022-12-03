@@ -631,11 +631,23 @@ footer a p{
   border:1px solid black;
   margin-left:auto;
   margin-right:auto;  
+  box-sizing: border-box;
 }
 
 .contact-form input[type="button"]{
   width:100%;
   text-align:center;
+  margin-top:20px;
 }
 
+.contact-information .contact-details{
+  display:flex;
+}
 
+.contact-information .contact-details-images{
+  display:flex;
+}
+
+.contact-details-images a img{
+  width:50px;
+}
