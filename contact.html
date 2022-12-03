@@ -12,11 +12,10 @@
             <img src="image/logo.png" height="100%" alt="Logo">
         </a>
         <nav>
-          <a href="#">Home</a>
-            <a href="#">Testimonies</a>
-            <a href="#">Products</a>
+          <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
             <a href="#" class="active">Contact</a>
-            <a href='#'>Promotion</a>
+            <a href='promotions.html'>Promotion</a>
             <a href="#">
                 <p id="cartQuantity"></p>
                 <img src="image/cartFillEmpty.png" height="30px" alt ="cart">
@@ -24,24 +23,27 @@
         </nav>
     </header>
 
-    <div style="height:100px; width:100%;"></div>
+    <div style="height:75px; background-color:black;"></div>
 
     <section class="contact-section">
-        <form>
+        <form class="contact-form">
             <h1>Contact Us</h1>
-            <div class="input-per-line">
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
-            </div>
-            <div class="input-per-line">
-                <input type="text" placeholder="Phone">
-                <input type="text" placeholder="Email">
-            </div>
-            <textarea rows="4" cols="50"></textarea>
-        </form>
-        <aside>
+            <p>
+                Got a question? 
+                We'd love to hear from you.
+                Send us a message and we'll respond as soon as possible.
+            </p>
+            <h2>Name</h2>
+            <input type="text" placeholder="Enter Name">
 
-        </aside>
+            <h2>Email Address</h2>
+            <input type="text" placeholder="Enter email address">
+
+            <h2>Message</h2>
+            <textarea rows="4" placeholder="Enter message here"></textarea>
+
+            <input type="button" value="Send feedback">
+        </form>
     </section>
 
     <footer>

@@ -588,22 +588,6 @@ footer a p{
   width: 100%;
 }
 
-.seeMore{
-  width:100%;
-  display:flex;
-  justify-content: right;
-  align-items: center;
-  text-align:center;
-}
-
-.seeMore a{
-  display:block;
-  padding:20px;
-  height: 100%;
-  background-color: #112434;
-  color:#ffffff;
-}
-
 /* Index END */
 
 /* Products */
@@ -631,39 +615,27 @@ footer a p{
 
 
 /* Contact Us */   
-.contact-section{
-  width:90%;
-  height:100vh;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
+.contact-form{
+  padding:20px;
 }
 
-.contact-section form{
-  background-color: green;
-  width:80%;
-  height:80%;
-  margin:0px auto 0px auto;
-  display:flex;
-  align-items: center;
-  justify-content: center;
+.contact-form h1{
+  margin:0;
 }
 
-.input-per-line{
-  display:flex;
+.contact-form input[type=text],
+.contact-form textarea {
+  display:block;
+  width:100%;
+  padding:12px;
+  border:1px solid black;
+  margin-left:auto;
+  margin-right:auto;  
 }
 
-.input-per-line input[type=text]{
-  width:200px;
-  margin-left:20px;
-  margin-right:20px;
+.contact-form input[type="button"]{
+  width:100%;
+  text-align:center;
 }
 
-.contact-section form textarea{
-  margin-left: 20px;
 
-}
-
-.contact-section aside{
-  width: 20%;
-}
