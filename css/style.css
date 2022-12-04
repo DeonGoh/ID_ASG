@@ -349,13 +349,18 @@
   }
 /* NORMALIZE CSS END */
 
+body{
+  font-family: sans-serif,arial;
+  background-color:#c6c9ca;
+}
+
 /* Header */
 header{
 	width:90%;
 	height:75px;
 	display:flex;
   position:absolute;
-  border-bottom:1px solid white;
+  border-bottom:1px solid #EFF0F4;
   left: 50%;
   transform: translate(-50%);
 }
@@ -385,20 +390,16 @@ nav a{
   padding-top: 15px;
   padding-bottom: 15px;
 	font-size:20px;
-  color:white;
+  color:#c6c9ca;
   border-bottom: 2px solid transparent;
 	text-decoration:none;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 nav a:hover{
   border-bottom: 2px white solid;
-  /* Changing depending on color scheme*/
   color:#ffffff;
-}
-
-nav a.active{
-  /* Changing depending on color scheme*/
-
 }
 
 /* Nav END */
@@ -407,8 +408,7 @@ nav a.active{
 footer{
 	width:100%;
 	height:50px;
-	background-color:#21363e;
-  margin-top:20px;
+	background-color:#727a7d;
 }
 
 .footerInner{
@@ -468,7 +468,7 @@ footer a p{
   height:100%;
   background-repeat:no-repeat;
   background-position: center;
-  background-image:url(image/preview.gif);
+  background-image:url(../image/preview.gif);
   background-size: cover;
   position:absolute;
 }
@@ -476,7 +476,7 @@ footer a p{
 .overlay{
   width:100%;
   height:100%;
-  background-image:url(image/overlay.png);
+  background-image:url(../image/overlay.png);
   background-repeat: repeat;
   position:absolute;
 
@@ -538,6 +538,11 @@ footer a p{
 	border:1px solid;
 }
 
+.image-preview img:hover{
+  background-color:white;
+  cursor:pointer;
+}
+
 /* Headline */
 .headline{
 	width:100%;
@@ -545,7 +550,7 @@ footer a p{
 }
 
 .headline h1{
-	font-size:1.5em;
+	font-size:2em;
 }
 
 /* Category Section */
@@ -556,7 +561,6 @@ footer a p{
 
 .category{
 	width:25%;
-  background-color:white;
   padding:10px 20px 10px 20px;
   box-sizing: border-box;
   text-align:center;
@@ -583,13 +587,17 @@ footer a p{
 }
 
 .category input[type=button]{
-  padding:7.5px;
+  padding:10px;
+  font-size:1.5em;
   background-color: #112434;
   color:white;
   border-radius: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 .category input[type=button]:hover{
+  cursor: pointer;
   background-color: white;
   color: #112434;
 }
@@ -599,6 +607,11 @@ footer a p{
   width:100%;
   overflow-x: hidden;
   white-space: nowrap;
+}
+
+.testimonies:hover{
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .testimony{
@@ -624,9 +637,21 @@ footer a p{
   width: 100%;
 }
 
+.testimony p{
+  width:100%;
+  white-space:normal;
+}
 /* Index END */
 
 /* Products */
+.product-page{
+  background: url(../image/product_background.jpg);
+  height:40vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+
 .whitespace{
   width:90%;
   margin-right: auto;
@@ -652,7 +677,17 @@ footer a p{
 }
 
 .product input[type=button]{
+  background-color: #112434;
+  color:white;
+  border-radius: 15px;
+  padding:10px;
   width:100%;
+}
+
+.product input[type=button]:hover{
+  background-color: white;
+  color:#112434;
+  cursor:pointer;
 }
 
 .product-image-container{
@@ -673,18 +708,22 @@ footer a p{
 
 
 /* Contact Us */   
-.contact-background{
-  background: #9999ff url("image/contact_bg.jpg");
+.contact-page{
+  background: url(../image/contact_background.jpg);
+  height:40vh;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size:cover;
 }
+
 .contact-section{
-  width:90%;
-  height:85vh;
+  width:85%;
+  height:60vh;
+  border: 1px #C4CFDA solid;
+  background-color:#EFF0F4;
+  border-radius: 20px;
   display:flex;
-  margin-left:auto;
-  margin-right:auto;
+  margin:20px auto 20px auto;
 }
 
 .contact-form{
@@ -692,6 +731,7 @@ footer a p{
   margin-top:auto;
   margin-bottom:auto;
   padding:20px;
+  border-left:2px solid black;
   box-sizing: border-box;
 }
 
@@ -719,7 +759,18 @@ footer a p{
 .contact-form input[type="button"]{
   width:100%;
   text-align:center;
+  font-size:20px;
   margin-top:20px;
+  background-color: white;
+  color:black;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.contact-form input[type="button"]:hover{
+  background-color: black;
+  color:white;
+  border-color:white;
 }
 
 .contact-information{
@@ -754,4 +805,144 @@ footer a p{
 
 .contact-details div img{
   width:50px;
+}
+/* IPAD AIR POTRAIT MODE */
+@media only screen and (max-width: 820px) {
+  /* products page */
+  .products-listing{
+    flex-direction: column;
+  }
+
+  .product{
+    width:100%;
+  }
+}
+
+/* IPAD MINI POTRAIT MODE */
+@media only screen and (max-width: 768px) {
+  /* products page */
+  .contact-details{
+    margin:0;
+  }
+}
+
+/* SURFACE DUO POTRAIT MODE */
+@media only screen and (max-width: 540px) {
+  /* Global fix */
+  header{
+    width:100%;
+    height:auto;
+    flex-direction: column;
+    position:static;
+    transform: translate(0);
+  }
+
+  header .logo img{
+    display:block;
+    height:75px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header nav{
+    flex-direction: column;
+    height:auto;
+    align-items: center;
+  }
+
+  header nav a{
+    height:75px;
+    width:100%;
+    color:black;
+    border:0;
+    margin:0;
+    padding:0;
+  }
+  /* products page */
+  .category-selection{
+    flex-direction: column;
+  }
+
+  .category{
+    width:100%;
+  }
+
+  .testimonies{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .testimony{
+    width:100%;
+  }
+
+  .product-section{
+    flex-direction: column;
+  }
+
+  .text-section{
+    box-sizing: border-box;
+    width:100%;
+  }
+
+  .image-section{
+    width:100%;
+  }
+
+  /* Contact page */
+  .contact-section{
+    width:100%;
+    height:auto;
+    border-radius: 0;
+    margin:0;
+    flex-direction: column;
+  }
+
+  .contact-information{
+    width:100%;
+  }
+
+  .contact-form{
+    width:100%;
+    border-left:0;
+    border-top:1px black solid;
+  }
+
+  .contact-form h1{
+    font-size:20px;
+  }
+
+  .contact-form h2{
+    font-size:15px;
+  }
+
+  .contact-form input[type="button"]{
+    margin-bottom:20px;
+  }
+
+  footer a p{
+    padding:0;
+  }
+
+  .footerLeft a p{
+    padding:0;
+    margin:0;
+  }
+
+  .footerRight p{
+    margin:0;
+    padding:0;
+  }
+}
+
+/* IPAD AIR LANDSCAPE MODE */
+@media only screen and (max-height: 820px) {
+  /* contact page */
+  .contact-form{
+    padding:0 20px 0 20px;
+  }
+  .contact-form h1,
+  .contact-form h2{
+    margin:0;
+  }
 }
