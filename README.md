@@ -5,7 +5,16 @@
 This website is for anybody to browse to look for information and purchase tech products. It is based off websites such as amazon and razer. The design is purposely monochromatic as to not overwhelm the user with an overuse of colors and to make it easier for people who are colorblind to explore the website
 
 ## Features
-
+- Feature 1:
+- - Allow users to navigate to different parts of the websites when theye click the link
+- Feature 2:
+- - Allow users to view different products preview when they click the smaller image on the index page
+- Feature 3:
+- - Allow users to view different types of testimonials by dragging the image around
+- Feature 4:
+- - Allow users to input their details into the contact us page 
+- Feature 5:
+ - - Allow users to go to the product when the user click shop now on the product page\
 
 ## Technologies Used
 - Javascript
