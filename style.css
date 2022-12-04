@@ -642,6 +642,8 @@ footer a p{
 
 .product{
   width:25%;
+  padding:20px;
+  box-sizing: border-box;
 }
 
 .product img{
@@ -649,25 +651,50 @@ footer a p{
   padding-bottom:30px;
 }
 
+.product input[type=button]{
+  width:100%;
+}
+
+.product-image-container{
+  width:100%;
+  overflow:hidden;
+  position:relative;
+  padding-top: 100%;
+}
+
+.product-image-container img{
+  position:absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
 
 /* Contact Us */   
+.contact-background{
+  background: #9999ff url("image/contact_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .contact-section{
-  width:100%;
-  height:100vh;
+  width:90%;
+  height:85vh;
   display:flex;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .contact-form{
-  width:50%;
+  width:70%;
   margin-top:auto;
   margin-bottom:auto;
   padding:20px;
   box-sizing: border-box;
 }
 
-.contact-form h1{
-  margin:0;
-}
 
 .contact-form div input[type=text]{
   width:50%;
@@ -696,7 +723,7 @@ footer a p{
 }
 
 .contact-information{
-  width:50%;
+  width:30%;
   margin-top:auto;
   margin-bottom:auto;
   padding:20px;
@@ -711,7 +738,7 @@ footer a p{
   width:50%;
   margin-right:auto;
   margin-left:auto;
-  padding:25px 10px 25px 10px;
+  padding:10px;
   box-sizing: border-box;
 }
 
@@ -721,7 +748,7 @@ footer a p{
 }
 
 .contact-details div p{
-  padding-left:50px;
+  padding-left:10px;
   box-sizing: border-box;
 }
 
