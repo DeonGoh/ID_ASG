@@ -735,6 +735,14 @@ footer a p{
   box-sizing: border-box;
 }
 
+.contact-form h1{
+  margin:0;
+}
+
+.contact-form h2{
+  margin:0;
+}
+
 
 .contact-form div input[type=text]{
   width:50%;
